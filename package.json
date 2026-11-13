@@ -1,17 +1,22 @@
 {
-  "name": "homework-23",
+  "name": "homework-24",
   "version": "1.0.0",
   "private": true,
-  "description": "Домашняя работа 23: async/await и Promise.all в TypeScript",
-  "type": "module",
+  "description": "Домашняя работа 24: Express-приложение с GET и POST на TypeScript",
+  "type": "commonjs",
   "scripts": {
-    "check": "tsc --noEmit",
-    "build": "tsc",
-    "start": "node ./dist/task_1.js && node ./dist/task_2.js && node ./dist/task_3.js && node ./dist/task_4.js",
-    "dev": "npm run build && npm start"
+    "check": "tsc --noEmit --module commonjs --target ES6",
+    "build": "tsc --module commonjs --target ES6",
+    "start": "ts-node --compiler-options \"{\\\"module\\\":\\\"commonjs\\\",\\\"target\\\":\\\"ES6\\\"}\" src/index.ts",
+    "dev": "npm start"
   },
   "devDependencies": {
+    "@types/express": "5.0.6",
     "@types/node": "24.19.2",
     "typescript": "5.9.3"
+  },
+  "dependencies": {
+    "express": "5.3.0",
+    "ts-node": "10.9.2"
   }
 }
