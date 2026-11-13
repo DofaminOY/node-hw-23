@@ -1,0 +1,17 @@
+{
+  "name": "homework-23",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Домашняя работа 23: async/await и Promise.all в TypeScript",
+  "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "tsc",
+    "start": "node ./dist/task_1.js && node ./dist/task_2.js && node ./dist/task_3.js && node ./dist/task_4.js",
+    "dev": "npm run build && npm start"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "typescript": "5.9.3"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    /* ---------- Базовые настройки ---------- */
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "ES2022"
+    ],
+
+    /* ---------- Пути и структура ---------- */
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "paths": {
+      "*": [
+        "./src/*"
+      ]
+    },
+
+    /* ---------- Поддержка совместимости ---------- */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+
+    /* ---------- Проверка и строгий режим ---------- */
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    /* ---------- Генерация и отладка ---------- */
+    "sourceMap": true,
+    "inlineSources": true,
+    "noEmitOnError": true
+  },
+
+  /* ---------- Какие файлы учитывать ---------- */
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
